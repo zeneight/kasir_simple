@@ -1,0 +1,22 @@
+RewriteEngine on
+
+RewriteRule ^home$ media.php?module=home [L]
+RewriteRule ^berita-(.*)\.html$ media.php?module=detailberita&id=$1 [L]
+RewriteRule ^gallery(.*)\.html$ media.php?module=gallery&id=$1 [L]
+RewriteRule ^cara-pembelian\.html$ media.php?module=carabeli&id=$1 [L]
+RewriteRule ^login\.html$ media.php?module=form_login&id=$1 [L]
+RewriteRule ^daftar\.html$ media.php?module=daftar&id=$1 [L]
+RewriteRule ^daftar-distributor\.html$ media.php?module=daftardistributor&id=$1 [L]
+RewriteRule ^produk-(.*)\.html$ media.php?module=detailproduk&id=$1 [L]
+RewriteRule ^kategori-(.*)\.html$ media.php?module=detailkategori&id=$1 [L]
+RewriteRule ^halkategori-([0-9]+)-(.*)\.html$ media.php?module=detailkategori&id=$1&halkategori=$2 [L]
+RewriteRule ^indeks-berita\.html$ media.php?module=indeksberita&id=$1 [L]
+RewriteRule ^profil-kami\.html$ media.php?module=profilkami&id=$1 [L]
+RewriteRule ^hubungi-kami\.html$ media.php?module=hubungikami&id=$1 [L]
+RewriteRule ^hubungi-aksi\.html$ media.php?module=hubungiaksi&id=$1 [L]
+RewriteRule ^semua-produk\.html$ media.php?module=semuaproduk&id=$1 [L]
+RewriteRule ^semua-berita\.html$ media.php?module=semuaberita&id=$1 [L]
+RewriteRule ^halberita-(.*)\.html$ media.php?module=semuaberita&halberita=$1 [L]
+RewriteRule ^status-pembelian\.html$ media.php?module=statuspembelian&id=$1 [L]
+
+Options All -Indexes
